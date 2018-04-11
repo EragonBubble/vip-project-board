@@ -14,62 +14,33 @@ body{
     text-align: center;
     vertical-align: middle;
     height: 100%;
-    font-size: 48px;
     font-weight: bold;
     color: #FFFFFF;
-    line-height: 58.5px;
-    font-family: PingFangSC-Semibold;
-	font-size: 36px;
+    line-height: 5.85rem;
+	font-size: 3.6rem;
 	color: #161616;
-	letter-spacing: 10px;
-	line-height: 58.5px;
-}
-.ui-panel-ad{
-	display: inline-block;
-    width: 75%;
-    font-size: 40px;
-    vertical-align: middle;
-    color: #FFFFFF;
-    line-height: 48px;
-    padding-left: 2%;
-}
-.ui-panel-ad-content{
-	display: inline-block;
-    vertical-align: middle;
-    width: 90%;
-}
-i.ui-ad-icon{
-    display: inline-block;
-    width: 5%;
-    min-width: 60px;
-    height: 40px;
-    background: url(../images/notice@1x.png) no-repeat;
-    vertical-align: middle;
-    margin-right: 5px;
+	letter-spacing: 1rem;
 }
 .ui-panel-body{
 	width: 100%;
 }
-.text-center{
-	text-align: center !important;
-}
 .ui-table {
     width: 100%;
+    border-collapse: collapse;
     background-color: transparent;
 }
-.ui-table thead tr{
-	height: 50px;
-	background: #034d8c;
+.ui-table thead{
+	border-bottom: 0.2rem solid #C7C7CB;
+
 }
 .ui-table thead tr th{
-	font-family: PingFangSC-Semibold;
-	height: 35px;
-    border:none;
-    line-height: 35px;
+	border: none;
+    height: 3.2rem;
+    line-height: 3.2rem;
     font-weight: bold;
-	font-size: 28px;
-	color: #FFFFFF;
-	text-align: center;
+	font-size: 2.8rem;
+	color: #161616;
+	text-align: left;
 }
 .ui-table tbody tr.even{
 	background: rgba(240,240,246,0.60);
@@ -77,138 +48,37 @@ i.ui-ad-icon{
 .ui-table tbody td{
 	box-sizing: border-box;
     border-bottom: 1px solid #efefef;
-    padding: 10px 0;
+    padding: 1rem 0;
     white-space: normal;
     word-wrap: break-word;
     word-break: break-all;
     text-align: center;
-    line-height: 94px;
+    line-height: 9.4rem;
     font-weight: bold;
-}
-.ui-progress-td{
-	padding: 0 60px !important;
-}
-.ui-table .id{
-	width: 3.4%;
-}
-.ui-table .pro-name{
-	width: 18.3%;
-	min-width: 218px;
-}
-.ui-table .pro-jl{
-	width: 10%;
-}
-.ui-table .pro-plan{
-	width: 48.3%;
-	min-width: 612px;
-}
-.ui-table .cur-term{
-	width: 10%;
-}
-.ui-table .cur-status{
-	width: 10%;
 }
 /* --------- 单元格样式 -------*/
 .ui-td-title{
-	font-family: PingFangSC-Semibold;
-	font-size: 36px;
+	font-size: 3.2rem;
 	color: #161616;
-	line-height: 48px;
-}
-.ui-td-summary{
-	font-family: PingFangSC-Regular;
-	font-size: 20px;
-	color: #161616;
-	line-height: 20px;
-}
-.ui-td-summary-content{
-	font-family: PingFangSC-Semibold;
-	font-size: 20px;
-	color: #161616;
+	text-align: left;
+	line-height: 3.2rem;
 }
 .h-48{
-	height: 48px !important;
+	height: 4.8rem !important;
 }
 .h-60{
-	height: 60px !important;
+	height: 6rem !important;
 }
 .h-80{
-	height: 80px !important;
-}
-/* -------- 节点 ---------- */
-.ui-dot{
-	display: inline-block;
-	position: absolute;
-    width: 6px;
-    height: 6px;
-    background: #FFFFFF;
-    border: 2px solid #ECECEE;
-    border-radius: 100px;
-}
-.ui-dot.normal{
-    background: #FFFFFF;
-    border: 2px solid #ECECEE;
-}
-.ui-dot.active{
-    background: #FFFFFF;
-    border: 2px solid #FF9900;
+	height: 8rem !important;
 }
 /* --------- 标识颜色 ------*/
 .ui-level-normal{
-	color: #007CE7 !important;
-}
-.ui-level-delay{
-	color: #FE3824 !important;
+	color: #007CE7 !important; /* 正常 */
 }
 .ui-level-notice{
-	color: #FF9900 !important;
+	color: #FF9900 !important; /* 预警 */
 }
-/* ------- 研发过程 ---------*/
-.ui-pro-group{
-	display: inline-block;
-	width: 18%;
-	font-size: 0;
-	float: left;
-}
-.ui-td-pro-flow{
-	font-family: PingFangSC-Semibold;
-	font-size: 16px;
-	color: #161616;
-	line-height: 20px;
-	margin: 5px 0;
-}
-.ui-td-progress{
-	background: #ECECEE;
-	height: 8px;
-	width: 100%;
-}
-.ui-td-progressing{
-	background: #FF9900;
-	float: left;
-	height: 8px;
-	line-height: 8px;
-	width: 25%;
-}
-.ui-td-pro-date{
-	font-family: PingFangSC-Regular;
-	font-size: 16px;
-	color: #626266;
-	line-height: 20px;
-	margin: 5px 0;
-}
-/* --------- 计划时间2 -----------*/
-.plan-item1{
-	height: 22px;
-}
-.plan-item1-content{
-	display: inline-block;
-	width: 18%;
-}
-.plan-item2{
-	height: 10px;
-	background: #ECECEE;
-}
-.plan-item2-content{
-	width: 22px;
-	background: #FF9900;
+.ui-level-delay{
+	color: #FE3824 !important; /* 紧急 */
 }
