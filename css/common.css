@@ -17,12 +17,15 @@ body{
     font-weight: bold;
     color: #FFFFFF;
     line-height: 5.85rem;
-	font-size: 3.6rem;
+    font-size: 3.6rem;
 	color: #161616;
 	letter-spacing: 1rem;
 }
 .ui-panel-body{
 	width: 100%;
+}
+.text-center{
+	text-align: center;
 }
 .ui-table {
     width: 100%;
@@ -38,30 +41,65 @@ body{
     height: 3.2rem;
     line-height: 3.2rem;
     font-weight: bold;
-	font-size: 2.8rem;
+	font-size: 2rem;
 	color: #161616;
 	text-align: left;
+	padding: 0 0.5rem;
 }
 .ui-table tbody tr.even{
 	background: rgba(240,240,246,0.60);
 }
 .ui-table tbody td{
+	text-align: left;
+    font-weight: bold;
 	box-sizing: border-box;
     border-bottom: 1px solid #efefef;
-    padding: 1rem 0;
     white-space: normal;
     word-wrap: break-word;
     word-break: break-all;
-    text-align: center;
-    line-height: 9.4rem;
-    font-weight: bold;
 }
 /* --------- 单元格样式 -------*/
 .ui-td-title{
-	font-size: 3.2rem;
+	font-size: 2.1rem;
 	color: #161616;
 	text-align: left;
-	line-height: 3.2rem;
+	line-height: 2.1rem;
+}
+.ui-td-wrap{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 1.4rem 0 0.5rem 0.5rem;
+}
+.ui-td-wrap .ui-td-item{
+	display: inline-flex;
+    margin-bottom: 1rem;
+}
+.ui-td-wrap .ui-td-item .ui-td-summary{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ui-td-wrap .ui-td-item .fz-max{
+	font-size: 2rem;
+	line-height: 2rem;
+	color: #161616;
+}
+.ui-td-wrap .ui-td-item .fz-middle{
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+	color: #161616;
+}
+.ui-td-wrap .ui-td-item .fz-min{
+	font-size: 1rem;
+    line-height: 1rem;
+	color: #424242;
+}
+.ui-td-wrap .ui-td-item .fz-small{
+	font-size: 0.8rem;
+	line-height: 0.8rem;
+	color: #B4B4BD;
 }
 .h-48{
 	height: 4.8rem !important;
@@ -74,7 +112,7 @@ body{
 }
 /* --------- 标识颜色 ------*/
 .ui-level-normal{
-	color: #007CE7 !important; /* 正常 */
+	color: #161616 !important; /* 正常 */
 }
 .ui-level-notice{
 	color: #FF9900 !important; /* 预警 */
