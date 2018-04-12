@@ -29,8 +29,8 @@ body{
 .ui-panel-body{
 	width: 100%;
 }
-.text-center{
-	text-align: center;
+.null-padding{
+	padding: 0 !important;
 }
 .ui-table {
     width: 100%;
@@ -103,11 +103,13 @@ body{
 	font-size: 1rem;
     line-height: 1rem;
 	color: #424242;
+	padding: 0 0 0 0.5rem;
 }
 .ui-td-wrap .ui-td-item .fz-small{
 	font-size: 0.8rem;
 	line-height: 0.8rem;
 	color: #B4B4BD;
+	padding: 0 0 0 0.5rem;
 }
 .h-48{
 	height: 4.8rem !important;
