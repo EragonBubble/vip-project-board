@@ -6,7 +6,13 @@ body{
 	font-family: 'PingFangSC-Semibold';
 	padding: 0;
 	margin: 0;
-	font-size: 62.5%;
+	font-size: 62.5%; /* 1rem = 16px */
+}
+.text-left{
+	text-align: left !important;
+}
+.text-center{
+	text-align: center !important;
 }
 .ui-panel{
 	justify-content: flex-start;
@@ -18,22 +24,22 @@ body{
 .ui-panel-header{
     text-align: center;
     vertical-align: middle;
-    height: 100%;
-    font-weight: bold;
     color: #FFFFFF;
-    line-height: 5.85rem;
-    font-size: 3.6rem;
-	  color: #161616;
-		letter-spacing: 1rem;
+    line-height: 3.66rem;
+    font-size: 2.25rem;
+    color: #161616;
+    letter-spacing: 0.63rem;
 }
 .ui-panel-header .update-time{
-		font-size: 1.2rem;
-		font-weight: normal;
-    float: right;
-    line-height: 5.85rem;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0.89rem;
+    font-size: 1.25rem;
+    line-height: 1.88rem;
     letter-spacing: 0;
     padding-right: 0.5rem;
-    color: #161616;
+    color: #626266;
 }
 .ui-panel-body{
 	width: 100%;
@@ -47,26 +53,25 @@ body{
     background-color: transparent;
 }
 .ui-table thead{
-	border-bottom: 0.2rem solid #C7C7CB;
+	border-bottom: 0.13rem solid #C7C7CB;
 
 }
 .ui-table thead tr th{
-		border: none;
+    border: none;
     height: 2.2rem;
-    line-height: 2.2rem;
-    font-weight: bold;
-		font-size: 1.4rem;
-		color: #161616;
-		text-align: left;
-		padding: 0 0.2rem;
+    line-height: 1.38rem;
+    vertical-align: middle;
+    font-size: 1.25rem;
+    color: #161616;
+    text-align: center;
+    padding: 0 0.5rem;
 }
 .ui-table tbody tr.even{
 	background: rgba(240,240,246,0.60);
 }
 .ui-table tbody td{
-	text-align: left;
-    font-weight: bold;
-	box-sizing: border-box;
+		text-align: left;
+		box-sizing: border-box;
     border-bottom: 1px solid #efefef;
     white-space: normal;
     word-wrap: break-word;
@@ -83,41 +88,59 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	padding: 1.5rem 0 0.6rem 0.5rem;
+	align-items: center;
+	padding: 1.6rem 0 0.5rem 0.5rem;
+}
+.ui-td-wrap.ai-left{
+	align-items: flex-start;
 }
 .ui-td-wrap.ai-center{
 	align-items: center;
 }
 .ui-td-wrap .ui-td-item{
 	display: inline-flex;
-    margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 }
 .ui-td-wrap .ui-td-item .ui-td-summary{
 	display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 .ui-td-wrap .ui-td-item .fz-max{
-	font-size: 1.4rem;
-	line-height: 1.4rem;
+	font-size: 2rem;
+	line-height: 2rem;
+	font-weight: bold;
 	color: #161616;
 }
+.ui-td-wrap .ui-td-item .fz-max-extra-lh{
+	line-height: 4.5rem !important;
+}
 .ui-td-wrap .ui-td-item .fz-middle{
-	font-size: 1.6rem;
-	line-height: 1.6rem;
+	font-size: 1.75rem;
+	line-height: 2rem;
+	font-weight: bold;
 	color: #161616;
 }
 .ui-td-wrap .ui-td-item .fz-min{
-	font-size: 0.8rem;
-    line-height: 0.8rem;
-	color: #424242;
+	font-size: 1.25rem;
+	line-height: 2rem;
+	color: #0A0A0A;
 	padding: 0 0 0 0.2rem;
 }
+.ui-td-wrap .ui-td-item .fz-min-middle-color{
+	color: #161616 !important;
+}
 .ui-td-wrap .ui-td-item .fz-small{
-	font-size: 0.6rem;
-	line-height: 0.6rem;
-	color: #B4B4BD;
+	font-size: 1.13rem;
+	line-height: 1.25rem;
+	color: #626266;
+	padding: 0 0 0 0.2rem;
+}
+.ui-td-wrap .ui-td-item .fz-mini{
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: #424242;
 	padding: 0 0 0 0.2rem;
 }
 .h-48{
